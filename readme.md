@@ -1,6 +1,6 @@
-### FluidSQL
+### FluidSQL ###
 
-# FluidSQL is a robust error reporting tool which runs on PHP and communicates with a MySQL backend database. 
+# FluidSQL is a robust error reporting tool which runs on PHP and communicates with a MySQL backend database. #
 
 This application is still in development.
 
