@@ -1,0 +1,59 @@
+Changes Made On 29/10/2013:
+
+		Modified Error Reporting Tool with a checkbox to specify a FileName
+		
+		Modified Error Reporting Tool to reduce Redirects by 1, current value: 2
+		
+		Modified /DBView/GetErrors $_GET Values/validations to take the new redirection structure
+		
+		Modified /DBView/DatabaseStats $_GET Values/Validations to take the new redirection structure
+		
+		Modified /DBView/View_PDF (with the following): 
+		
+			1. The tool will now only create a page for the PDF View, if the data is within the necessary folder
+			2. The tool has been modified to function differently based on the values of $_GET:
+				2.1. Will only save the file to the database, if ?FileName is present when searching for $_GET values 
+				
+		Removed /DBView/index.php validations based on $_GET, as this is no longer required due to the restructured re-directs 
+		
+		Added a "New Notification" Counter on the main notification bars to display the number of 'new' errors/actioned errors since previous login 
+			- This will update on every refresh, and has been a "soft" migration into the tool. Only highlighting over the boxes will display the value
+			
+		Added a new section in the navigation bar for "Report Management"
+			- Added first feature page to enable users of the application to view any stored PDF Documents 
+			- Added The Page to view the PDF Report which will open up in a new Tab (same action as creating a report)
+			
+		Added a user management option on Developer_List.php 
+			- Input for the users date of birth is set to readonly, as a date of birth should not change. 
+			- Added Readable statuses for the different user account type: 
+				- 0 = Banned
+				- 1 = Active
+				- 2 = On Leave
+
+		Modified Reporting View to show the PDF Document within an Frame this enables the user to navigate away from the report with ease 
+		
+		Finished development on the Edit_User.php page, will now update the users information with the correct information 
+		
+Changes made On 03/11/2013:
+
+		Finished Off the installation file, this is now shipped in the main releases of FluidSQL
+		Website produced for the Application: http://www.FluidSQL.co.uk, with documentation 
+		Tweaked the installation files:
+			Changed Entire file structure 
+			The install will now correctly create the necessary view in the database
+		
+Changes Made On 05/11/2013:
+		Modified /DBView/GetErrors to create specific tables based on the error messages detected.
+			No more "NaN" will be displayed for error messages which are not reported in the database
+		
+		
+		
+		Package Versions: 
+			Initial Package: 1.6 (Web Scripts located in the main directory [excluding handler.php])
+			Error_Reporting: 2.0 (Located in /DBView/GetErrors.php)
+			Database_Statistics: 2.0 (Located In /DBView/DatabaseStats.php)
+			Report Showcase: 1.9 (Located in /DBView/View_PDF.php);
+			Error Handler: 1.3.2 (Located in main directory, listed as handler.php)
+			Installation Tool: 1.0 (Alpha Release) 
+			Backend Database: 3.1
+		
