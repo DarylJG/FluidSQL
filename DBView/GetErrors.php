@@ -1,5 +1,6 @@
 <?php
-	include "../Core/DB_Con.php";
+	include "../Core/Settings.php";
+	include "../Core/Database.php";
 	include "../Handler.php";
 	
 	/*
@@ -7,7 +8,7 @@
 		
 		@Author: Daryl Gill
 		@Github: https://github.com/DarylJG
-		@E-mai: daryl_gill@hotmail.co.uk
+		@E-mail: daryl_gill@hotmail.co.uk
 	*/
 	
 	

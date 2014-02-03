@@ -10,7 +10,7 @@
 	date_default_timezone_set('Europe/London');
 	
 	// Set default instance to access to the reporting database schema and necessary tables 
-	$_SQLInstance = new mysqli ("HOST", "USER", "PASSWORD","DBSCHEMA");
+	$_SQLInstance = new mysqli ("", "", "","");
 	
 	
 function errorHandler($errno, $errstr, $errfile, $errline)

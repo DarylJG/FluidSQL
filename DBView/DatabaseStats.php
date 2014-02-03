@@ -1,5 +1,6 @@
 <?php
-	include "../Core/DB_Con.php";
+	include "../Core/Settings.php";
+	include "../Core/Database.php";
 	include "../Handler.php";
 	unset($DB);
 	$DB = new mysqli(DBHost,DBUser,DBPass);

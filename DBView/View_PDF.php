@@ -2,7 +2,8 @@
 
 
 include "MPDF/mpdf.php";
-include "../Core/DB_Con.php";
+include "../Core/Settings.php";
+include "../Core/Database.php";
 	
 	
 $mpdf=new mPDF('c','A4','','' , 0 , 0 , 0 , 0 , "Test" , "tets");
