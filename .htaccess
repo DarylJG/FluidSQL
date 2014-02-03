@@ -1,0 +1,7 @@
+   # Options +FollowSymLinks  
+    RewriteEngine On  
+	RewriteRule ^css/(.*)$ Templates/Testing/html/css/$1 [NC,L]
+    RewriteCond %{SCRIPT_FILENAME} !-d  
+    RewriteCond %{SCRIPT_FILENAME} !-f  
+      
+    RewriteRule ^.*$ ./index.php  [L]
